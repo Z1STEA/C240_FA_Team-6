@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP Admissions Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- RP Header -->
+    <header class="rp-header">
+        <div class="logo">REPUBLIC POLYTECHNIC</div>
+        <nav>
+            <span>Education</span>
+            <span class="active">Admissions</span>
+            <span>Student Life</span>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <h1>Admissions</h1>
+        <p class="subtitle">Find the information you need to join RP. View intake numbers, ELR2B2 ranges, enrolment steps and appeal options.</p>
+        
+        <div class="card-grid">
+            <div class="card"><h3>Guides →</h3><p>Learn about admission pathways...</p></div>
+            <div class="card"><h3>ELR2B2 & Intake Numbers →</h3><p>Check aggregate ranges...</p></div>
+        </div>
+    </main>
+
+</main>
+
+    <!-- Black Footer Section Added Here -->
+    <footer class="rp-footer-dark">
+        <div class="footer-left">
+            <strong>Republic Polytechnic</strong>
+            <span>Education</span>
+            <span>Disclaimer</span>
+            <span>Reach us</span>
+        </div>
+    </footer>
+
+    <!-- Floating Interface Group -->
+    <div class="bot-container">
+
+    <!-- Floating Interface Group -->
+    <div class="bot-container">
+        
+        <!-- Hidden Chat Window Container -->
+        <div class="chat-widget hidden" id="chatWidget">
+            <div class="chat-header">
+                <span class="bot-status">🟢</span>
+                <strong>Admissions Guide</strong>
+                <button class="close-btn" onclick="toggleChat()">×</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="message bot">Hi, Ask me anything about EAE application timelines, JAE cut-off points, or our full-time diplomas!</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Ask me anything...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <!-- Floating Smiley Robot Icon -->
+        <div class="robot-launcher" onclick="toggleChat()" id="launcherBtn">
+            <div class="robot-head">
+                <div class="ears"></div>
+                <div class="eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                </div>
+                <div class="smile"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
