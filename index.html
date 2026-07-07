@@ -3,83 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RP Admissions Portal</title>
+    <title>RP FAQ Chatbot</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- RP Header -->
     <header class="rp-header">
         <div class="logo">REPUBLIC POLYTECHNIC</div>
         <nav>
-            <span>Education</span>
-            <span class="active">Admissions</span>
-            <span>Student Life</span>
+            <a href="#about">About</a>
+            <a href="#workflow">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#guide">User Guide</a>
         </nav>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="content">
-        <h1>Admissions</h1>
-        <p class="subtitle">Find the information you need to join RP. View intake numbers, ELR2B2 ranges, enrolment steps and appeal options.</p>
-        
-        <div class="card-grid">
-            <div class="card"><h3>Guides →</h3><p>Learn about admission pathways...</p></div>
-            <div class="card"><h3>ELR2B2 & Intake Numbers →</h3><p>Check aggregate ranges...</p></div>
+    <section class="hero">
+        <h1>RP FAQ Chatbot</h1>
+        <p>An AI-powered FAQ chatbot built using Botpress and a Markdown Knowledge Base.</p>
+        <a class="btn" href="#guide">Learn How to Use</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About This Project</h2>
+        <p>This website introduces the Republic Polytechnic FAQ Chatbot developed using Botpress. It explains how the chatbot works, what technologies were used, and how users can interact with it.</p>
+    </section>
+
+    <section id="workflow" class="section">
+        <h2>How the Chatbot Works</h2>
+        <div class="flow">
+            <div class="box">1. User asks a question</div>
+            <div class="arrow">→</div>
+            <div class="box">2. Botpress receives the request</div>
+            <div class="arrow">→</div>
+            <div class="box">3. Knowledge Base is searched</div>
+            <div class="arrow">→</div>
+            <div class="box">4. AI returns the answer</div>
         </div>
-    </main>
+    </section>
 
-</main>
-
-    <!-- Black Footer Section Added Here -->
-    <footer class="rp-footer-dark">
-        <div class="footer-left">
-            <strong>Republic Polytechnic</strong>
-            <span>Education</span>
-            <span>Disclaimer</span>
-            <span>Reach us</span>
+    <section id="features" class="section">
+        <h2>Features</h2>
+        <div class="cards">
+            <div class="card"><h3>Admissions</h3><p>Application and enrolment information.</p></div>
+            <div class="card"><h3>Courses</h3><p>Diploma information.</p></div>
+            <div class="card"><h3>Fees</h3><p>Payment and financial matters.</p></div>
+            <div class="card"><h3>Campus</h3><p>Navigation and facilities.</p></div>
+            <div class="card"><h3>Student Life</h3><p>CCA and activities.</p></div>
+            <div class="card"><h3>Contact</h3><p>Official RP contacts.</p></div>
         </div>
-    </footer>
+    </section>
 
-    <!-- Floating Interface Group -->
-    <div class="bot-container">
+    <section id="guide" class="section">
+    <h2>How to Use the Chatbot</h2>
+    <ol>
+        <li>Open the chatbot using the floating robot icon.</li>
+        <li>Select a category or type your question naturally.</li>
+        <li>The chatbot searches the knowledge base and returns the most relevant answer.</li>
+    </ol>
 
-    <!-- Floating Interface Group -->
+    <h3>Example Questions</h3>
+    <ul>
+        <li>How do I apply to RP?</li>
+        <li>Where is the Library?</li>
+        <li>How do I pay my fees?</li>
+        <li>Where is RPIC?</li>
+        <li>How do classroom codes work?</li>
+    </ul>
+    </section>
+
     <div class="bot-container">
-        
-        <!-- Hidden Chat Window Container -->
-        <div class="chat-widget hidden" id="chatWidget">
+        <div id="chatWidget" class="chat-widget hidden">
             <div class="chat-header">
-                <span class="bot-status">🟢</span>
-                <strong>Admissions Guide</strong>
+                RP FAQ Chatbot
                 <button class="close-btn" onclick="toggleChat()">×</button>
             </div>
-            <div class="chat-body" id="chatBody">
-                <div class="message bot">Hi, Ask me anything about EAE application timelines, JAE cut-off points, or our full-time diplomas!</div>
-            </div>
-            <div class="chat-footer">
-                <input type="text" id="userInput" placeholder="Ask me anything...">
-                <button onclick="sendMessage()">Send</button>
+            <div class="chat-body">
+                <h3>Botpress Chatbot</h3>
+                <p>Paste your Botpress Webchat embed here.</p>
+                <!-- Paste Botpress embed below -->
             </div>
         </div>
 
-        <!-- Floating Smiley Robot Icon -->
-        <div class="robot-launcher" onclick="toggleChat()" id="launcherBtn">
-            <div class="robot-head">
-                <div class="ears"></div>
-                <div class="eyes">
-                    <div class="eye"></div>
-                    <div class="eye"></div>
-                </div>
-                <div class="smile"></div>
-            </div>
-        </div>
-
+        <div class="robot-launcher" onclick="toggleChat()">🤖</div>
     </div>
 
+    <footer>
+        Republic Polytechnic • C240 AI Essentials & Innovations
+    </footer>
+
     <script src="script.js"></script>
+
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
     <script src="https://files.bpcontent.cloud/2026/06/27/06/20260627063956-86QMQF3N.js" defer></script>
-
+    
 </body>
 </html>
