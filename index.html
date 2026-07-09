@@ -5,19 +5,50 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>RP Helpert</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description"
+          content="AI-powered Republic Polytechnic FAQ Assistant built using Botpress and RAG.">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Animate CSS -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS -->
+
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Bootstrap Icons -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Website CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
 
 </head>
 
@@ -25,86 +56,323 @@
 
     <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<!-- FAQ -->
 
-        <div class="container">
+<section id="faq" class="py-5">
 
-            <a class="navbar-brand fw-bold" href="#">
-                RP Helpert
-            </a>
+    <div class="container">
 
-            <button class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav">
+        <div class="text-center mb-5">
 
-                <span class="navbar-toggler-icon"></span>
+            <span class="hero-badge">
 
-            </button>
+                ❓ Frequently Asked Questions
 
-            <div class="collapse navbar-collapse" id="nav">
+            </span>
 
-                <ul class="navbar-nav ms-auto">
+            <h2 class="mt-4">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
+                Common Questions
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
+            </h2>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#guide">Guide</a>
-                    </li>
+            <p class="mx-auto" style="max-width:700px;">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#bot">Meet the Team</a>
-                    </li>
+                Here are some of the most common questions students ask RP Helpert.
 
-                </ul>
+            </p>
+
+        </div>
+
+        <div class="accordion accordion-flush" id="faqAccordion">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                        data-bs-toggle="collapse"
+
+                        data-bs-target="#faq1">
+
+                        How do I start using RP Helpert?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq1"
+
+                    class="accordion-collapse collapse"
+
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Click the <strong>Launch Live Chat</strong> button on the homepage and begin asking your question naturally.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                        data-bs-toggle="collapse"
+
+                        data-bs-target="#faq2">
+
+                        What topics can the chatbot answer?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq2"
+
+                    class="accordion-collapse collapse"
+
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Admissions, courses, fees, scholarships, campus facilities, student life, and general Republic Polytechnic information.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                        data-bs-toggle="collapse"
+
+                        data-bs-target="#faq3">
+
+                        Is RP Helpert available anytime?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq3"
+
+                    class="accordion-collapse collapse"
+
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Yes. The chatbot is designed to provide assistance 24 hours a day whenever students need help.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button class="accordion-button collapsed"
+
+                        data-bs-toggle="collapse"
+
+                        data-bs-target="#faq4">
+
+                        How does the chatbot generate answers?
+
+                    </button>
+
+                </h2>
+
+                <div id="faq4"
+
+                    class="accordion-collapse collapse"
+
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        RP Helpert uses Botpress together with a Retrieval-Augmented Generation (RAG) knowledge base to provide accurate and relevant responses.
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-    </nav>
+    </div>
+
+</section>
 
     <!-- Hero -->
 
-    <section class="hero text-center">
+    <!-- Hero -->
+
+    <section class="hero position-relative overflow-hidden">
+
+        <div class="hero-grid"></div>
 
         <div class="container">
 
-            <h1
-                class="display-3 fw-bold animate__animated animate__fadeInDown">
+            <div class="row align-items-center min-vh-100">
 
-                RP Helpert
+                <div class="col-lg-7">
 
-            </h1>
+                    <span class="badge hero-badge mb-4">
 
-            <p
-                class="lead animate__animated animate__fadeInUp animate__delay-1s">
+                        <i class="bi bi-stars"></i>
 
-                AI-powered student support built using Botpress and a Knowledge Base.
+                        Powered by Botpress AI + RAG
 
-            </p>
+                    </span>
 
-            <div class="mt-4">
+                    <h1 class="display-2 fw-bold animate__animated animate__fadeInDown">
 
-                <a href="#guide"
-                    class="btn btn-primary btn-lg me-3">
+                        Your Smart RP
 
-                    Getting Started
+                        <span class="text-gradient">
 
-                </a>
+                            Student Assistant
 
-                <button
-                    id="launchBot"
-                    class="btn btn-outline-light btn-lg">
+                        </span>
 
-                    💬 Launch Live Chat
+                    </h1>
 
-                </button>
+                    <p class="lead mt-4 animate__animated animate__fadeInUp">
+
+                        RP Helpert helps Republic Polytechnic students instantly find information about admissions, courses, campus facilities, student life and more using an AI-powered chatbot built with Botpress and Retrieval-Augmented Generation.
+
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 mt-5">
+
+                        <a href="#guide"
+
+                            class="btn btn-primary btn-lg px-4">
+
+                            <i class="bi bi-play-circle-fill"></i>
+
+                            Getting Started
+
+                        </a>
+
+                        <button
+
+                            id="launchBot"
+
+                            class="btn btn-outline-light btn-lg px-4">
+
+                            <i class="bi bi-robot"></i>
+
+                            Launch Live Chat
+
+                        </button>
+
+                    </div>
+
+                    <div class="hero-stats mt-5">
+
+                        <div>
+
+                            <h3>24/7</h3>
+
+                            <span>Availability</span>
+
+                        </div>
+
+                        <div>
+
+                            <h3>7+</h3>
+
+                            <span>Knowledge Areas</span>
+
+                        </div>
+
+                        <div>
+
+                            <h3>AI</h3>
+
+                            <span>Powered</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 text-center">
+
+                    <div class="hero-card animate__animated animate__zoomIn">
+
+                        <div class="hero-card-header">
+
+                            <div class="hero-dots">
+
+                                <span></span>
+
+                                <span></span>
+
+                                <span></span>
+
+                            </div>
+
+                            <small>RP Helpert</small>
+
+                        </div>
+
+                        <div class="hero-card-body">
+
+                            <div class="chat-bubble ai">
+
+                                👋 Hello! I'm RP Helpert.
+
+                            </div>
+
+                            <div class="chat-bubble">
+
+                                Where is the Library?
+
+                            </div>
+
+                            <div class="chat-bubble ai">
+
+                                📚 The Library is located on Level 3 of the Learning Resource Centre.
+
+                            </div>
+
+                            <div class="chat-bubble">
+
+                                How do I apply?
+
+                            </div>
+
+                            <div class="chat-bubble ai">
+
+                                🎓 I can guide you through the admissions process.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -210,7 +478,133 @@
         </div>
 
     </section>
+    <!-- ===========================
+        TECHNOLOGY
+    =========================== -->
 
+    <section id="technology" class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="hero-badge">
+
+                    ⚙️ Technology Stack
+
+                </span>
+
+                <h2 class="mt-4">
+
+                    Built With Modern AI Technologies
+
+                </h2>
+
+                <p class="mx-auto" style="max-width:700px;">
+
+                    RP Helpert combines Artificial Intelligence, Botpress,
+                    Retrieval-Augmented Generation (RAG), and a structured
+                    Knowledge Base to provide reliable answers.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            🤖
+
+                        </div>
+
+                        <h4>Botpress</h4>
+
+                        <p>
+
+                            AI chatbot platform powering conversations.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            📚
+
+                        </div>
+
+                        <h4>Knowledge Base</h4>
+
+                        <p>
+
+                            Stores structured RP information.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            ⚡
+
+                        </div>
+
+                        <h4>RAG</h4>
+
+                        <p>
+
+                            Retrieves relevant information before answering.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+
+                            💻
+
+                        </div>
+
+                        <h4>Bootstrap</h4>
+
+                        <p>
+
+                            Responsive and modern website interface.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
     <!-- Guide -->
 
     <section id="guide"
@@ -339,33 +733,191 @@
 
     <!-- Team -->
 
-    <section id="bot"
-        class="container py-5"
-        data-aos="fade-up">
+<!-- ===========================
+     TEAM
+=========================== -->
 
-        <h2>
+<section id="bot" class="py-5">
 
-            Meet the Team
+    <div class="container">
 
-        </h2>
+        <div class="text-center mb-5">
 
-        <div class="alert alert-success mt-4">
+            <span class="hero-badge">
 
-            Behind RP Helpert is a dedicated team committed to designing, developing, testing, and refining an AI-powered assistant that enhances the Republic Polytechnic student experience.
+                👥 Meet Team 6
 
-            <hr>
+            </span>
 
-            <strong>Joshua</strong> — Team Leader, QA & Data Lead<br>
+            <h2 class="mt-4">
 
-            <strong>Wei Han</strong> — Solution Lead<br>
+                The Team Behind RP Helpert
 
-            <strong>Dylan</strong> — Data Lead<br>
+            </h2>
 
-            <strong>Ally</strong> — Communications Lead
+            <p class="mx-auto" style="max-width:700px;">
+
+                RP Helpert was designed, developed and tested collaboratively
+                by Team 6 as part of the C240 AI Essentials & Innovations
+                Final Assessment.
+
+            </p>
 
         </div>
 
-    </section>
+        <div class="row g-4">
+
+            <!-- Joshua -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="team-card">
+
+                    <div class="team-avatar">
+
+                        👨🏻‍💻
+
+                    </div>
+
+                    <h4>
+
+                        Joshua
+
+                    </h4>
+
+                    <span class="role">
+
+                        Team Leader
+
+                    </span>
+
+                    <p>
+
+                        Oversees project planning, quality assurance,
+                        testing and knowledge base management.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Wei Han -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="team-card">
+
+                    <div class="team-avatar">
+
+                        👨🏻‍💻
+
+                    </div>
+
+                    <h4>
+
+                        Wei Han
+
+                    </h4>
+
+                    <span class="role">
+
+                        Solution Lead
+
+                    </span>
+
+                    <p>
+
+                        Designed the Botpress chatbot,
+                        conversation flow,
+                        website integration
+                        and AI solution.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Dylan -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="team-card">
+
+                    <div class="team-avatar">
+
+                        👨🏻‍💻
+
+                    </div>
+
+                    <h4>
+
+                        Dylan
+
+                    </h4>
+
+                    <span class="role">
+
+                        Data Lead
+
+                    </span>
+
+                    <p>
+
+                        Organised the knowledge base,
+                        maintained FAQs,
+                        verified data quality
+                        and RAG content.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Ally -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="team-card">
+
+                    <div class="team-avatar">
+
+                        👩🏻‍🎨
+
+                    </div>
+
+                    <h4>
+
+                        Ally
+
+                    </h4>
+
+                    <span class="role">
+
+                        Communications Lead
+
+                    </span>
+
+                    <p>
+
+                        Managed branding,
+                        promotional materials,
+                        presentation assets
+                        and documentation.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Footer -->
 
@@ -447,6 +999,9 @@
 
     </script>
 
+
+    <!-- Cursor Effects -->
     <div class="cursor-glow"></div>
+    <div class="cursor-dot"></div>
 
 </body>
