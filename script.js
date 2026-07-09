@@ -1,3 +1,1 @@
-function toggleChat() {
-    document.getElementById('chatWidget').classList.toggle('hidden');
-}
+// Reserved for future enhancements.
