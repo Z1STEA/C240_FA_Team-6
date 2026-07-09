@@ -1,1 +1,733 @@
-body{font-family:system-ui,sans-serif}.card{transition:.2s}.card:hover{transform:translateY(-6px)}img{border:1px solid #ddd}
+/* =========================================
+   CAMPUS AI - BOTPRESS THEME
+========================================= */
+
+:root{
+
+    --primary:#4F8CFF;
+
+    --primary-dark:#3B82F6;
+
+    --background:#080B14;
+
+    --surface:#101827;
+
+    --text:#F8FAFC;
+
+    --text-light:#A8B3CF;
+
+    --border:#24344E;
+
+}
+
+/* =========================================
+   GENERAL
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+body{
+
+    font-family:"Manrope",sans-serif;
+
+    font-weight:400;
+
+}
+
+body.loaded{
+
+    opacity:1;
+
+}
+
+section{
+
+    padding:100px 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+
+    color: var(--text);
+
+    font-weight: 800;
+
+    letter-spacing: -0.03em;
+
+    line-height: 1.15;
+
+}
+
+p{
+
+    color: var(--text-light);
+
+    font-weight: 400;
+
+    line-height: 1.8;
+
+}
+
+.container{
+
+    max-width: 1200px;
+
+}
+
+.navbar-brand{
+
+    font-weight: 700;
+
+}
+
+.nav-link{
+
+    font-weight: 500;
+
+}
+
+.btn{
+
+    font-weight: 600;
+
+}
+
+.card h5{
+
+    font-weight: 700;
+
+}
+
+.lead{
+
+    font-size: 1.15rem;
+
+    font-weight: 400;
+
+    color: var(--text-light);
+
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar{
+
+    background:rgba(15,23,42,.92)!important;
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+    padding:18px 0;
+
+}
+
+.navbar.scrolled{
+
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
+.navbar-brand{
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:white!important;
+
+    margin-left:20px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.nav-link:hover{
+
+    color:#DBEAFE!important;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-6px;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:2px;
+
+    background:var(--primary);
+
+    transition:.3s;
+
+}
+
+.nav-link:hover::after{
+
+    width:80%;
+
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    background:rgba(37,99,235,.12);
+
+    filter:blur(120px);
+
+    border-radius:50%;
+
+    top:-150px;
+
+    right:-120px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(37,99,235,.08);
+
+    filter:blur(100px);
+
+    border-radius:50%;
+
+    bottom:-120px;
+
+    left:-100px;
+
+}
+
+.hero h1{
+
+    color:#EAF2FF;
+
+    font-weight:800;
+
+    letter-spacing:-0.04em;
+
+    text-shadow:0 0 30px rgba(79,140,255,.15);
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-top:20px;
+
+    margin-bottom:35px;
+
+    font-size:1.15rem;
+
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.btn-success{
+
+    background:var(--primary);
+
+    border:none;
+
+    padding:14px 34px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+    box-shadow:
+
+    0 12px 35px rgba(37,99,235,.28);
+
+}
+
+.btn-success:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+    0 18px 45px rgba(37,99,235,.45);
+
+}
+
+/* =========================================
+   TITLES
+========================================= */
+
+section h2{
+
+    margin-bottom:35px;
+
+    font-size:2.3rem;
+
+}
+
+section h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:70px;
+
+    height:4px;
+
+    background:var(--primary);
+
+    margin-top:12px;
+
+    border-radius:10px;
+
+}
+
+/* =========================================
+   ABOUT
+========================================= */
+
+#about{
+
+    position:relative;
+
+}
+
+#about p{
+
+    font-size:1.05rem;
+
+}
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.card {
+
+    background: var(--surface);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    transition: .35s;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.06);
+
+}
+
+.card-body {
+
+    padding: 35px;
+
+}
+
+.card h5 {
+
+    color: var(--primary);
+
+    margin-bottom: 18px;
+
+    font-weight: 700;
+
+}
+
+.card p {
+
+    margin: 0;
+
+}
+
+.card:hover {
+
+    transform:
+        translateY(-12px)
+        scale(1.02);
+
+    border-color: var(--primary);
+
+    box-shadow:
+        0 28px 60px rgba(37,99,235,.18);
+
+}
+
+/* =========================================
+   GUIDE
+========================================= */
+
+#guide .row {
+
+    margin-bottom: 80px;
+
+}
+
+#guide img {
+
+    width: 100%;
+
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
+
+    transition: .45s;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.08);
+
+}
+
+#guide img:hover {
+
+    transform:
+        scale(1.03)
+        rotate(.3deg);
+
+    box-shadow:
+        0 28px 55px rgba(37,99,235,.15);
+
+}
+
+#guide h4 {
+
+    color: var(--primary);
+
+    margin-bottom: 15px;
+
+}
+
+#guide p {
+
+    font-size: 1.05rem;
+
+}
+
+/* =========================================
+   TEAM
+========================================= */
+
+.alert {
+
+    background: rgba(255,255,255,.85);
+
+    backdrop-filter: blur(18px);
+
+    border-radius: 24px;
+
+    border: 1px solid var(--border);
+
+    border-left: 5px solid var(--primary);
+
+    padding: 40px;
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.alert strong {
+
+    color: var(--primary);
+
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background: var(--dark);
+
+    color: white;
+
+    margin-top: 80px;
+
+    padding: 40px 0;
+
+}
+
+/* =========================================
+   IMAGE EFFECT
+========================================= */
+
+img {
+
+    transition: .4s;
+
+}
+
+/* =========================================
+   RIPPLE BUTTON
+========================================= */
+
+.ripple {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    transform: scale(0);
+
+    animation: ripple .6s linear;
+
+    background: rgba(255,255,255,.4);
+
+}
+
+@keyframes ripple {
+
+    to {
+
+        transform: scale(4);
+
+        opacity: 0;
+
+    }
+
+}
+
+/* =========================================
+   FLOATING HERO
+========================================= */
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #F1F5F9;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--primary);
+
+    border-radius: 30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--primary-dark);
+
+}
+
+/* =========================================
+   SELECTION
+========================================= */
+
+::selection {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+/* =========================================
+   SMALL FADE ANIMATION
+========================================= */
+
+.fade-up {
+
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition: .7s;
+
+}
+
+.fade-up.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:992px){
+
+    .hero{
+
+        padding:100px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .card-body{
+
+        padding:25px;
+
+    }
+
+    #guide .row{
+
+        margin-bottom:60px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .navbar-brand{
+
+        font-size:1.1rem;
+
+    }
+
+    .btn-success{
+
+        width:100%;
+
+    }
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+body{font-family:'Plus Jakarta Sans',sans-serif;background:#080B14;color:#F8FAFC;}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(79,140,255,.08),transparent 30%),radial-gradient(circle at 80% 80%,rgba(79,140,255,.06),transparent 35%);z-index:-2;}
+.cursor-glow{position:fixed;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(79,140,255,.16),transparent 70%);pointer-events:none;transform:translate(-50%,-50%);z-index:-1;}
+.navbar{background:rgba(8,11,20,.88)!important;}
+.card,.alert{background:rgba(17,24,39,.88);color:#E5E7EB;border:1px solid #263754;}
+h1,h2,h3,h4,h5,.lead,p{color:#F8FAFC!important;} footer{background:#05070F!important;}
