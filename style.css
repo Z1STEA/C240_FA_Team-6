@@ -514,16 +514,11 @@ section h2::after{
    FOOTER
 ========================================= */
 
-footer {
-
-    background: var(--dark);
-
-    color: white;
-
-    margin-top: 80px;
-
-    padding: 40px 0;
-
+footer{
+    background:#05070F;
+    color:#fff;
+    padding:40px 0;
+    margin-top:80px;
 }
 
 /* =========================================
@@ -725,7 +720,7 @@ img {
     }
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 body{font-family:'Plus Jakarta Sans',sans-serif;background:#080B14;color:#F8FAFC;}
 body::before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 20% 20%,rgba(79,140,255,.08),transparent 30%),radial-gradient(circle at 80% 80%,rgba(79,140,255,.06),transparent 35%);z-index:-2;}
 .navbar{background:rgba(8,11,20,.88)!important;}
