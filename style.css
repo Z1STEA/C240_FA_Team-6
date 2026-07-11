@@ -44,13 +44,34 @@ html{
 
 body{
 
-    font-family:"Manrope",sans-serif;
+    font-family:'Inter',sans-serif;
 
     font-weight:400;
 
     cursor:auto;
 }
+html,
+body,
+button,
+input,
+textarea,
+select,
+.navbar,
+.card,
+.btn,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a{
 
+    font-family:'Inter',sans-serif;
+
+}
 body.loaded{
 
     opacity:1;
