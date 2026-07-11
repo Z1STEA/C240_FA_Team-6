@@ -1284,3 +1284,8 @@ h1,h2,h3,h4,h5,.lead,p{color:#F8FAFC!important;} footer{background:#05070F!impor
     margin:0;
 
 }
+html,
+body,
+*{
+    font-family: "Inter", sans-serif !important;
+}
