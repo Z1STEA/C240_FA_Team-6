@@ -545,49 +545,22 @@
 
     <script src="script.js"></script>
 
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+
+    <script src="https://files.bpcontent.cloud/2026/07/10/09/20260710091645-EY6IV2FS.js" defer></script>
+
     <script>
-
-        let botLoaded = false;
-
         document.getElementById("launchBot").addEventListener("click", function () {
 
-            if (botLoaded) {
+            if (window.botpressWebChat) {
 
-                if (window.botpressWebChat) {
-
-                    window.botpressWebChat.sendEvent({
-
-                        type: "show"
-
-                    });
-
-                }
-
-                return;
+                window.botpressWebChat.sendEvent({
+                    type: "show"
+                });
 
             }
 
-            botLoaded = true;
-
-            const inject = document.createElement("script");
-
-            inject.src = "https://cdn.botpress.cloud/webchat/v3.6/inject.js";
-
-            inject.onload = () => {
-
-                const bot = document.createElement("script");
-
-                bot.src = "https://files.bpcontent.cloud/2026/07/07/14/20260707140220-8H2XEP20.js";
-
-                bot.defer = true;
-
-                document.body.appendChild(bot);
-
-            };
-
-            document.body.appendChild(inject);
-
         });
-
     </script>
+    
 </body>
