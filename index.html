@@ -552,15 +552,11 @@
     <script>
         document.getElementById("launchBot").addEventListener("click", function () {
 
-            if (window.botpressWebChat) {
-
-                window.botpressWebChat.sendEvent({
-                    type: "show"
-                });
-
+            if (window.botpress) {
+                window.botpress.open();
             }
 
         });
     </script>
-    
+
 </body>
