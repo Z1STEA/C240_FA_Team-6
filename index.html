@@ -9,6 +9,8 @@
 
     <title>RP Helpert</title>
 
+    <link rel="icon" type="image/png" href="images/logo.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="stylesheet" href="style.css">
 
@@ -29,8 +33,12 @@
 
         <div class="container">
 
-            <a class="navbar-brand fw-bold" href="#">
-                RP Helpert
+            <a class="navbar-brand d-flex align-items-center" href="#">
+
+                <img src="images/logo.png" class="nav-logo" alt="RP Helpert Logo">
+
+                <span>RP Helpert</span>
+
             </a>
 
             <button class="navbar-toggler"
@@ -54,6 +62,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="#presentation">Presentation</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="#guide">Guide</a>
                     </li>
 
@@ -72,7 +84,31 @@
     <!-- Hero -->
 
     <section class="hero text-center">
+        
+        <div class="hero-background">
 
+            <div class="bg-video video-one">
+                <video autoplay muted loop playsinline>
+                    <source src="video/Demo 1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bg-video video-two">
+                <video autoplay muted loop playsinline>
+                    <source src="video/Mobile demo.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="bg-video video-three">
+                <video autoplay muted loop playsinline>
+                    <source src="video/Demo Live 3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <img src="images/logo.png" class="hero-logo" alt="RP Helpert Logo">
+        
         <div class="container">
 
             <h1
@@ -91,10 +127,10 @@
 
             <div class="mt-4">
 
-                <a href="#guide"
+                <a href="#presentation"
                     class="btn btn-primary btn-lg me-3">
 
-                    Getting Started
+                    🎥 Watch Presentation
 
                 </a>
 
@@ -111,6 +147,46 @@
         </div>
 
     </section>
+    <!-- ============================================================
+        AI PRESENTATION
+    ============================================================= -->
+
+    <section id="presentation" class="py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <span class="hero-badge">
+                    🎥 AI Presentation
+                </span>
+
+                <h2 class="mt-4">
+                    Meet RP Helpert
+                </h2>
+
+                <p class="lead">
+                    Learn more about RP Helpert by watching our AI-generated presentation.
+                </p>
+
+            </div>
+
+            <div class="video-frame">
+
+            <iframe
+                src="https://share.synthesia.io/805ade13-726f-4978-b545-f3f681af0904"
+                title="RP Helpert AI Presentation"
+                loading="lazy"
+                allow="fullscreen; autoplay"
+                allowfullscreen>
+            </iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- About -->
 
@@ -336,6 +412,20 @@
         </div>
 
     </section>
+
+    <div class="container py-5">
+
+        <div class="side-video">
+
+            <video autoplay muted loop playsinline>
+
+                <source src="video/Demo Live 3.mp4" type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </div>
 
     <!-- Team -->
 
